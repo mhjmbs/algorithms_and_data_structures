@@ -1,5 +1,5 @@
 /*
-Counting sort sorts a sequence of values whose value's range is known into a monotonic ordering.
+Counting sort sorts a sequence of values, whose value's range is known, in monotonic order.
 Time Complexity: O(n + k), where n is the number of values in the sequence and k is the number of values in the range.
 
 The algorithm starts by iterating through the sequence and saving the frequency of each value in the range.
@@ -17,22 +17,22 @@ As an array of size = number of possible values is allocated, counting sort is t
 
 using namespace std;
 
-//Sorting a list of integers into non-deacreasing ordering.
+//Sorting an array of integers in non-deacreasing order.
 
-void countingSort(int left, int right, vector<int>& list) {
+void countingSort(int left, int right, vector<int>& array) {
     vector<int> freq(right-left+1, 0);
 
-    for(int value : list) {
+    for(int value : array) {
         freq[value]++;
     }
 
-    int listIndex = 0;
+    int arrayIndex = 0;
 
     for(int i = 0; i < freq.size(); i++) {
         while(freq[i] > 0) {
-            list[listIndex] = left+i;
+            array[arrayIndex] = left+i;
             freq[i]--;
-            listIndex++;
+            arrayIndex++;
         }
     }
 

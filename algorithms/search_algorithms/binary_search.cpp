@@ -37,15 +37,15 @@ using namespace std;
 
 //Looking for a value equal to target.
 
-int binarySearch1(int target, vector<int>& list) {
-    int left = 0, right = list.size()-1, ans = -1;
+int binarySearch1(int target, vector<int>& array) {
+    int left = 0, right = array.size()-1, ans = -1;
 
     while(left <= right) {
         int middle = left + (right - left)/2;
 
-        if(target < list[middle]) {
+        if(target < array[middle]) {
             right = middle - 1;
-        }else if(list[middle] < target){
+        }else if(array[middle] < target){
             left = middle + 1;
         }else {
             ans = middle;
@@ -58,15 +58,15 @@ int binarySearch1(int target, vector<int>& list) {
 
 //Looking for the first value strictly smaller than target.
 
-int binarySearch2(int target, vector<int>& list) {
-    int left = 0, right = list.size()-1, ans = -1;
+int binarySearch2(int target, vector<int>& array) {
+    int left = 0, right = array.size()-1, ans = -1;
 
     while(left <= right) {
         int middle = left + (right - left)/2;
 
-        if(target <= list[middle]) {
+        if(target <= array[middle]) {
             right = middle - 1;
-        }else if(list[middle] < target){
+        }else if(array[middle] < target){
             right = middle - 1;
             ans = middle;
         }
@@ -77,16 +77,16 @@ int binarySearch2(int target, vector<int>& list) {
 
 //Looking for the first value greater or equal to target.
 
-int binarySearch2(int target, vector<int>& list) {
-    int left = 0, right = list.size()-1, ans = -1;
+int binarySearch2(int target, vector<int>& array) {
+    int left = 0, right = array.size()-1, ans = -1;
 
     while(left <= right) {
         int middle = left + (right - left)/2;
 
-        if(target <= list[middle]) {
+        if(target <= array[middle]) {
             right = middle - 1;
             ans = middle;
-        }else if(list[middle] < target){
+        }else if(array[middle] < target){
             right = middle + 1;
         }
     }
