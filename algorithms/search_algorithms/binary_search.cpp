@@ -1,6 +1,6 @@
 /*
 Binary search finds a specific value in a monotonic sequence of values.
-Complexity: O(logn), where n is the number of values in the sequence.
+Time Complexity: O(logn), where n is the number of values in the sequence.
 
 To look for this value, firstly de algorithm needs the left and right extremes of the monotonic sequence.
 Then, it retrieves the middle element of the sequence, and compares it to a target value.

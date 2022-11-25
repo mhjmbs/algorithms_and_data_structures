@@ -1,6 +1,6 @@
 /*
 Bubble Sort sorts a sequence of values into a monotonic ordering.
-Complexity: O(n^2), where n is the number of elements in the sequence.
+Time Complexity: O(n^2), where n is the number of elements in the sequence.
 
 The algorithm firstly compares values two by two, from the start of the sequence to the end.
 If the value to the right should come before the value to the left, they are switched.
