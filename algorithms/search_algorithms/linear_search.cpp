@@ -8,8 +8,7 @@ If ans = -1, there is no such value in the sequence.
 
 
 Observations:
-
-Can be used to find every ocurrence of the value, rather than the last or first.
+    Can be used to find every ocurrence of the value, rather than the last or first.
 */
 
 //Implementation examples:

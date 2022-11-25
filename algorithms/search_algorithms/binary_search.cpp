@@ -16,17 +16,17 @@ We halve the searching area, remaining only the half that the desired value is/m
 
 Observations:
 
-The desired value might not be in the sequence. In that case, if ans = -1 and search range = 0, it wasn't found.
+    The desired value might not be in the sequence. In that case, if ans = -1 and search range = 0, it wasn't found.
 
-The first value greater or equal to a target in a monotonic sequence is called lowerbound.
-The first value greater to a target in a monotonic sequence is called upperbound.
+    The first value greater or equal to a target in a monotonic sequence is called lowerbound.
+    The first value greater to a target in a monotonic sequence is called upperbound.
 
-Binary searches that find the upperbound and lowerbound in a random access permitting data structure are already implemented in c++:
+    Binary searches that find the upperbound and lowerbound in a random access permitting data structure are already implemented in c++:
 
-Iterator lower_bound (Iterator first, Iterator last, const val) 
-Iterator upper_bound (Iterator first, Iterator last, const val)
+    Iterator lower_bound (Iterator first, Iterator last, const val) 
+    Iterator upper_bound (Iterator first, Iterator last, const val)
 
-If the value is not found, the end iterator of given data strucure is returned.
+    If the value is not found, the end iterator of given data strucure is returned.
 */
 
 //Implementation examples:

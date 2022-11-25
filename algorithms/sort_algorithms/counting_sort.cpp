@@ -8,7 +8,7 @@ Then, by iterating through the array the numbers in the sequence can be retrieve
 
 Observations:
 
-As an array of size = number of possible values is allocated, counting sort is terrible when the range of possible values is large.
+    As an array of size = number of possible values is allocated, counting sort is terrible when the range of possible values is large.
 */
 
 //Implementation examples:
