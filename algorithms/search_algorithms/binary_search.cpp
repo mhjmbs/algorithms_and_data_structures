@@ -31,11 +31,11 @@ If the value is not found, the end iterator of given data strucure is returned.
 
 //Implementation examples:
 
-//Looking for a value equal to target.
-
 #include <vector>
 
 using namespace std;
+
+//Looking for a value equal to target.
 
 int binarySearch1(int target, vector<int>& list) {
     int left = 0, right = list.size()-1, ans = -1;
