@@ -34,7 +34,6 @@ If the value is not found, the end iterator of given data strucure is returned.
 //Looking for a value equal to target.
 
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
