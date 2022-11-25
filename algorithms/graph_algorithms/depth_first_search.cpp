@@ -55,7 +55,7 @@ void dfs2(vector<vector<int>>& adjacencies) {
         for(int adjacency : adjacencies[node]) {
             if(!vis[adjacency]) {
                 s.push(adjacency);
-                vis[adjacency] = true;]
+                vis[adjacency] = true;
             }
         }
     }
