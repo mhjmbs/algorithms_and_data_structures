@@ -38,7 +38,7 @@ If the value is not found, the end iterator of given data strucure is returned.
 using namespace std;
 
 int binarySearch1(int target, vector<int>& list) {
-    int left = 0, right = list.size(), ans = -1;
+    int left = 0, right = list.size()-1, ans = -1;
 
     while(left <= right) {
         int middle = left + (right - left)/2;
