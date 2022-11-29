@@ -18,6 +18,18 @@ Observations:
     DFS is normally recursively implemented, using the function call stack as it's stack.
 
     A non-recursive dfs must mark nodes visited in the moment they're added to the stack, else they might be visited more than once.
+
+    DFS's execution generates a tree, whose edges are categorized as:
+        Tree edges: edges pointing to an unvisited descendant,thus, used to find new nodes.
+        Back edges: edges pointing to an ancestor.
+        Cross edges: edges pointing to a node in another subtree.
+        Forward edges: edges pointing to a visited descendant.
+
+    For an undirected graph, it's dfs tree will only have tree edges and back edges.
+
+    A back edge closes a cycle on the graph.
+
+    The lowlink of a vertex u is the lowest reachable discovery time from u.
 */
 
 //Implementation Examples:
